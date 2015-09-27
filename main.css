@@ -1,3 +1,36 @@
+div.banner {
+  background-color: rgb(250,105,56);
+  font-size: 12px;
+}
+
+.banner a {
+  line-height: 1.75;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: rgb(256,256,256);
+  display: block;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+div.freeship {
+  float: left;
+  margin-right: 15px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  background-color: rgba(0,0,0,0.2);
+  background-clip: border-box;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
 div.topbox {
   position: relative;
   margin: 0 auto;
@@ -6,6 +39,19 @@ div.topbox {
 ol,ul {
   list-style-type: none;
   padding: 0;
+}
+
+div.logo {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+ a.logo {
+  padding-left: 30px;
+ }
+
+.logo > img {
+  width: 128px;
 }
 
 div.account {
@@ -30,15 +76,13 @@ li.account {
   text-decoration: none;
 }
 
-div.logo {
+div.shop {
+  position: absolute;
   display: block;
-  padding: 0;
-  margin: 0;
+  top: 40px;
+  right: 150px;
 }
- a.logo {
-  padding-left: 30px;
- }
 
-.logo > img {
-  width: 128px;
+div.search {
+
 }
