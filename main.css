@@ -1,9 +1,18 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+ol,ul {
+  list-style-type: none;
+}
+
 div.banner {
   background-color: rgb(250,105,56);
   font-size: 12px;
 }
 
 .banner a {
+  vertical-align: middle;
   line-height: 1.75;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -15,18 +24,22 @@ div.banner {
   margin-right: 30px;
 }
 
+.banner > span {
+  font-size: 16px;
+}
 div.freeship {
-  float: left;
-  margin-right: 15px;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 1px;
   background-color: rgba(0,0,0,0.2);
   background-clip: border-box;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  float: left;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-right: 15px;
+  margin-top: 3px;
   padding-right: 7px;
   padding-left: 7px;
 }
@@ -79,10 +92,124 @@ li.account {
 div.shop {
   position: absolute;
   display: block;
-  top: 40px;
-  right: 150px;
+  top: 50px;
+  right: 180px;
+}
+
+.shop > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li.cart {
+  text-align: left;
+}
+
+a.cart:before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 2px;
+  width: 28px;
+  height: 24px;
+  margin-top: -7px;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: 25%;
+  background: url(https://raw.githubusercontent.com/tiy-atl-js-sept-2015/Assignments/master/Assignment-04/Hard-Mode/assets/sprite%402x.png) -90px -2px no-repeat;
+}
+
+.cart > a {
+  border: 1px solid rgb(216, 216, 216);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: rgb(100,100,100);
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  padding-right: 35px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.cartcount {
+  background-color: rgb(200,200,200);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-size: 13px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  position: absolute;
+  right: 6px;
+  text-align: center;
+  top: 16px;
+  vertical-align: middle;
+  width: 20px;
 }
 
 div.search {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  display: block;
+  width: 128px;
+}
 
+.slogo {
+  position: absolute;
+  background: url(https://raw.githubusercontent.com/tiy-atl-js-sept-2015/Assignments/master/Assignment-04/Hard-Mode/assets/sprite%402x.png) -20px -30px no-repeat;
+}
+
+input.search {
+  margin: 6px;
+  width: 128px;
+  display: inline-block;
+  padding-left: 30px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: rgb(216, 216, 216);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: rgb(244, 244, 244) 0px 0px 0px 4px;
+}
+
+div.nav {
+  position: absolute;
+  top: 55px;
+  left: 165px;
+}
+
+nav {
+  display: block;
+  position: relative;
+}
+
+nav > ol {
+  position: relative;
+  list-style-type: none;
+}
+
+.nav {
+  display: list-item;
+  float: left;
+}
+
+.nav > a {
+  text-align: left;
+  color: rgb(50,50,50);
+  font-size: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  text-decoration: none;
 }

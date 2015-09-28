@@ -3,6 +3,7 @@
 <head>
   <title>Skinny Ties</title>
   <link rel="stylesheet" type="text/css" href="Reset.css">
+  <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -23,20 +24,29 @@
       </ul>
     </div>
     <div class="shop">
-      <div class="cart">
-        <a href="http://skinnyties.com/ShoppingCart">Cart</a>
-        <span class= "cartcount">0</span>
-      </div>
-    </div>
-    <div class="search"></div>
-    <div><nav>
       <ul>
-        <li>Collection</li>
-        <li>Color</li>
-        <li>Width</li>
-        <li>Fabric</li>
-        <li>Pattern</li>
+      <li class="cart">
+        <a href="http://skinnyties.com/ShoppingCart" class="cart">Cart <span class="cartcount">0</span></a>
       </ul>
+    </div>
+    <div class="search">
+      <form id="search-form" action="http://skinnyties.com/search/results/" method="get">
+        <div class="input-box">
+          <span class="slogo"></span>
+          <input class ="search" type="text" name="Search" value="" placeholder="Search">
+        </div>
+      </form>
+      </div>
+
+    </div>
+    <div class="nav"><nav>
+      <ol>
+        <li class="nav"><a href="">Collection</a></li>
+        <li class="nav"><a href="">Color</a></li>
+        <li class="nav"><a href="">Width</a></li>
+        <li class="nav"><a href="">Fabric</a></li>
+        <li class="nav"><a href="">Pattern</a></li>
+      </ol>
     </nav></div>
   </div>
 </header>
